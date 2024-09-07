@@ -29,19 +29,13 @@ const Top = () => {
           <img className='left__main-img' src={images.box_1} alt="Gradient 1" />
           <div className="main__information">
             <div className='profil'>
-              <img src={images.profile_6} alt="Profil" />
                 <div>
-                  <h2 className='h2__font1'>The Futr Abstr</h2>
-                  <p className='p__font1'>10 in the stock</p>
+                  <h2 className='boxname'>OUR PERSONALIZED BOXES</h2>
+                  <p className='p__font1'>The Beautiful Crafted Boxes of BharatSe brings Happiness</p>
+                  <p className='p__font1'>Across the world</p>
                 </div>
             </div>
-            <div className="bid">
-              <p className='p__font1'>Highest Bid</p>
-                <div>
-                  <img src={images.eth2} alt="Etherum Icon" />
-                  <h2 className='h2__font1'>0.25 USDT</h2>
-                </div>
-            </div>
+            
           </div>
         </div>
         <div className="app__top-left_children_content">
@@ -57,7 +51,7 @@ const Top = () => {
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
-                <button className='button__1'>Place a bid</button>
+                <button className='button__1'>Check Now</button>
             </div>
           </div>
           <div className="app__top-left_children">
@@ -72,7 +66,7 @@ const Top = () => {
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
-                <button className='button__1'>Place a bid</button>
+                <button className='button__1'>Check Now</button>
             </div>
           </div>
           <div className="app__top-left_children">
@@ -87,7 +81,7 @@ const Top = () => {
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
-                <button className='button__1'>Place a bid</button>
+                <button className='button__1'>Check Now</button>
             </div>
           </div>
         </div>

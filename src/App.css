@@ -25,6 +25,14 @@
   font-weight: 600;
   transition: all ease 0.5s;
 }
+
+.boxname {
+  font-family: var(--font-base);
+  font-size: 30px;
+  font-weight: 600;
+  color: #ff5e00;
+  transition: all ease 0.5s;
+}
 .button_1 {
   font-family: var(--font-base);
   color: #fff;

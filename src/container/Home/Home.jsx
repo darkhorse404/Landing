@@ -13,21 +13,21 @@ const Home = () => {
   return (
     <div className="mt-12 app__home section__padding" id="home">
       <div className="app__home-content">
-        <h1>DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
+        <h1>DELIVERING INDIAN AUTHENTICITY WITH BLOCKCHAIN TRANSPARENCY</h1>
         <p className="p__font1">A community of Indian Diaspora for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
         <button className="button_1">Explore Now</button>
         <div className="app__home-content_amount">
           <div>
-            <h1>98K+</h1>
-            <p>Artwork</p>
+            <h1>219+</h1>
+            <p>Countries</p>
           </div>
           <div>
-            <h1>12K+</h1>
-            <p>Auction</p>
+            <h1>10K+</h1>
+            <p>Orders</p>
           </div>
           <div>
-            <h1>15K+</h1>
-            <p>Artist</p>
+            <h1>2K+</h1>
+            <p>Sellers</p>
           </div>
         </div>
       </div>

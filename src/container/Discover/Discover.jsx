@@ -42,7 +42,6 @@ const Discover = () => {
         {data.discovers.map((discover) => <DiscoverCard discover={discover} key={discover.title} /> )}
       </div>
       <div className="app__discover-button">
-        <button className='button_2'>More NFTs</button>
       </div>
     </div>
   )
