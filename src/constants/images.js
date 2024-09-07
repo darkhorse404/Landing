@@ -19,6 +19,7 @@ import eth2 from '../asset/eth2.png';
 import eth3 from '../asset/eth3.png';
 import eth4 from '../asset/eth4.png';
 import box_1 from '../asset/box1.png';
+import IndianPost from '../asset/IndianPost.png';
 
 
 export default{
@@ -42,5 +43,6 @@ export default{
     eth2,
     eth3,
     eth4,
-    box_1
+    box_1,
+    IndianPost
 };
