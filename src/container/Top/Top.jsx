@@ -42,14 +42,13 @@ const Top = () => {
           <div className="app__top-left_children">
             <img className='images__children' src={images.gradient_2} alt="Gradient 2" />
             <div className="children__information">
-              <h2 className='h2__font1'>The Futr Abstr</h2>
+              <h2 className='h2__font1'>Indian Lehenga</h2>
                 <div className='bil'>
                   <img src={images.profile_7} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25USDT</span>
+                      <span>0.25 USDT</span>
                     </div>
-                  <p className='p__font1'>1 of 8</p>
                 </div>
                 <button className='button__1'>Check Now</button>
             </div>
@@ -57,14 +56,13 @@ const Top = () => {
           <div className="app__top-left_children">
             <img className='images__children' src={images.gradient_3} alt="Gradient 2" />
             <div className="children__information">
-              <h2 className='h2__font1'>The Futr Abstr</h2>
+              <h2 className='h2__font1'>Jaynagar Moya</h2>
                 <div className='bil'>
                   <img src={images.profile_8} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25USDT</span>
+                      <span>0.25 USDT</span>
                     </div>
-                  <p className='p__font1'>1 of 8</p>
                 </div>
                 <button className='button__1'>Check Now</button>
             </div>
@@ -72,14 +70,13 @@ const Top = () => {
           <div className="app__top-left_children">
             <img className='images__children' src={images.gradient_4} alt="Gradient 2" />
             <div className="children__information">
-              <h2 className='h2__font1'>The Futr Abstr</h2>
+              <h2 className='h2__font1'>Indian Diyas</h2>
                 <div className='bil'>
                   <img src={images.profile_4} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25USDT</span>
+                      <span>0.25 USDT</span>
                     </div>
-                  <p className='p__font1'>1 of 8</p>
                 </div>
                 <button className='button__1'>Check Now</button>
             </div>
@@ -87,7 +84,7 @@ const Top = () => {
         </div>
       </div>
       <div className="app__top-right">
-        <h1 className='h1__font2'>TOP COLLECTIONS OVER</h1>
+        <h1 className='h1__font2'>BEST SELLERS</h1>
         <h2 className='h2__font1'>Last 7 days</h2>
         <div className="collections">
           {data.collections.map((collection) => <CollectionsChoice collection={collection} key={collection.title} />)}

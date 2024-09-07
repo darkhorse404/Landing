@@ -4,41 +4,42 @@ const collections = [
     {
         number  : '1',
         imgUrl  : images.profile_1,
-        title   : 'CryptoFunks',
+        title   : 'Anish Agarwal',
         icon    : images.eth4,
-        percen  : '+26.52%'
+        bid     : 'An Embroidiery Artist',
+        percen  : 'Maharashtra'
     },
     {
         number  : '2',
         imgUrl  : images.profile_2,
-        title   : 'Cryptix',
+        title   : 'Sayak Sen',
         icon    : images.eth4,
-        bid     : '2,769.39',
-        percen  : '+10.52%'
+        bid     : 'Famous Sweet Maker',
+        percen  : 'West Bengal'
     },
     {
         number  : '3',
         imgUrl  : images.profile_3,
-        title   : 'Frensware',
+        title   : 'Ankit Kumar',
         icon    : images.eth4,
-        bid     : '9,232.39',
-        percen  : '+2.52%'
+        bid     : 'Village Potter',
+        percen  : 'Bihar'
     },
     {
         number  : '4',
         imgUrl  : images.profile_4,
-        title   : 'PunkArt',
+        title   : 'Srijita Jana',
         icon    : images.eth4,
-        bid     : '3,769.39',
-        percen  : '+1.52%'
+        bid     : 'Ornament Designer',
+        percen  : 'Gujrat'
     },
     {
         number  : '5',
         imgUrl  : images.profile_5,
-        title   : 'Art Crypto',
+        title   : 'Priyanshu Priya',
         icon    : images.eth4,
-        bid     : '10,769.39',
-        percen  : '+2.52%'
+        bid     : 'Baked Sweets',
+        percen  : 'Assam'
     },
 ]
 
@@ -50,7 +51,7 @@ const featureds = [
         imgUrl4 : images.gradient_2,
         title   : 'Jewellery',
         profil  : images.profile_6,
-        names    : 'by Arief Wahyudi',
+        names    : 'by Mohini Kumari',
         item    : 'Total 54 items',
     },
     {
@@ -70,7 +71,7 @@ const featureds = [
         imgUrl4 : images.gradient_6,
         title   : 'Ethnics',
         profil  : images.profile_8,
-        names   : 'by Arkhan',
+        names   : 'by Arkhani',
         item    : 'Total 54 items',
     },
 ] 
@@ -81,8 +82,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -92,8 +94,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -103,8 +106,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -114,8 +118,9 @@ const discovers = [
         profil_2 : images.profile_7,
         profil_3 : images.profile_8,
         profil_4 : images.profile_4,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -125,8 +130,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -136,8 +142,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -147,8 +154,9 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
@@ -158,11 +166,13 @@ const discovers = [
         profil_2 : images.profil,
         profil_3 : images.profil,
         profil_4 : images.profil,
-        title    : 'Indian Product',
+        title    : 'ArtCrypto',
         icon     : images.eth2,
+        bid      : '0.25 USDT',
         amount   : '1 of 321',
         time     : '3h 50m 2s left',
     },
+
 ]
 
 export default { collections, featureds,discovers };
