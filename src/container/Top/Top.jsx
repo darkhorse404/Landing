@@ -39,7 +39,7 @@ const Top = () => {
               <p className='p__font1'>Highest Bid</p>
                 <div>
                   <img src={images.eth2} alt="Etherum Icon" />
-                  <h2 className='h2__font1'>0.25 ETH</h2>
+                  <h2 className='h2__font1'>0.25 USDT</h2>
                 </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Top = () => {
                   <img src={images.profile_7} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25ETH</span>
+                      <span>0.25USDT</span>
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
@@ -68,7 +68,7 @@ const Top = () => {
                   <img src={images.profile_8} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25ETH</span>
+                      <span>0.25USDT</span>
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
@@ -83,7 +83,7 @@ const Top = () => {
                   <img src={images.profile_4} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
-                      <span>0.25ETH</span>
+                      <span>0.25USDT</span>
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>

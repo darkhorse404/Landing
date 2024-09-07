@@ -77,7 +77,7 @@ const Home = () => {
                     <h1>Current Bid</h1>
                       <div className="current__bid">
                         <img src={images.eth} alt="Etherum Logo" />
-                        {/* <p>0.25 ETH</p> */}
+                        {/* <p>0.25 USDT</p> */}
                       </div>
                   </div>
                   <div className="content__2">
@@ -103,7 +103,7 @@ const Home = () => {
                       <h1>Current Bid</h1>
                         <div className="current__bid">
                           <img src={images.eth} alt="Etherum Logo" />
-                          {/* <p>0.25 ETH</p> */}
+                          {/* <p>0.25 USDT</p> */}
                         </div>
                     </div>
                     <div className="content__2">
@@ -129,7 +129,7 @@ const Home = () => {
                         <h1>Current Bid</h1>
                           <div className="current__bid">
                             <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 ETH</p> */}
+                            {/* <p>0.25 USDT</p> */}
                           </div>
                       </div>
                       <div className="content__2">
@@ -155,7 +155,7 @@ const Home = () => {
                         <h1>Current Bid</h1>
                           <div className="current__bid">
                             <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 ETH</p> */}
+                            {/* <p>0.25 USDT</p> */}
                           </div>
                       </div>
                       <div className="content__2">
@@ -181,7 +181,7 @@ const Home = () => {
                         <h1>Current Bid</h1>
                           <div className="current__bid">
                             <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 ETH</p> */}
+                            {/* <p>0.25 USDT</p> */}
                           </div>
                       </div>
                       <div className="content__2">
@@ -207,7 +207,7 @@ const Home = () => {
                         <h1>Current Bid</h1>
                           <div className="current__bid">
                             <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 ETH</p> */}
+                            {/* <p>0.25 USDT</p> */}
                           </div>
                       </div>
                       <div className="content__2">
