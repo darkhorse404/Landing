@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../asset/BharatSe_logo2.png'
 
 import {AiFillFacebook,AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 import './Footer.css';
@@ -8,8 +9,8 @@ const Footer = () => {
     <div className='app__footer section__padding'>
       <div className="app__footer-content">
       <div className="app__footer-content-1">
-        <h1 className='h1__font2'>NFTERS</h1>
-        <p className='p__font1'>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+        <div className='logo'><img className='h-full w-full object-cover' src={logo}></img></div>
+        <p className='p__font1 mb-5'>Your Not-A-Regular E-Commerce Site. An Unique Solution to Transform the world of Logistics. Pushing culture and India Post to new heights. Connecting bridges between Diaspora and Local Artisans in a Decentralised, Secure and Seamless way.</p>
         <ul>
           <li><a href="#"><AiFillFacebook className='facebook'/></a></li>
           <li><a href="#"><AiFillTwitterCircle className='twitter'/></a></li>
@@ -46,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <span className='p__font1'>Copyright © 2022 Ar Studio Tech</span>
+      <span className='p__font1'>Copyright © 2024 - DEVx AVES & Co.</span>
     </div>
   )
 }
