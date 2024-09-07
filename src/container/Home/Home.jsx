@@ -45,7 +45,7 @@ const Home = () => {
           }}
         >
           {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-            <SwiperSlide key={num}>
+            <SwiperSlide key={num} className="swiper-slide">
               <img src={images[`gradient_${num}`]} alt={`Gradient ${num}`} className="object-cover" />
               <div className="swiper__content">
                 <div className="swiper__content-top">

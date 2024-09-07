@@ -40,6 +40,8 @@
   --font-weight-bold: 700;
   --color-purple : #ff6100 ;
   --color-brown  : #565656 ;
+  width: 100%;
+  margin: 0;
 }
 * {
   box-sizing: border-box;
@@ -75,5 +77,32 @@ a {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+.slide-top {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.940, 0.450, 0.560, 0.250) both;
+  animation: slide-top 0.5s cubic-bezier(0.940, 0.450, 0.560, 0.250) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
 }

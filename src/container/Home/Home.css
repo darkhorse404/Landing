@@ -181,33 +181,38 @@
     }
     .app__home-images {
         width: 100%;
+        .mySwiper{
+            aspect-ratio: 1;
+            max-width: 80vw;
+        }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            height: 100%;
+        }
+        .swiper-slide img {
+            border-radius: 18px;
+            width: 80%;
+            height: 100%;
+            position: relative;
+        }
+        .swiper__content {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .swiper__content .swiper__content-top h1 {
+            font-size: 20px;
+        }
     }
-    .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 18px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
-        height: 100%;
-    }
-    .swiper-slide img {
-        border-radius: 18px;
-        width: 80%;
-        height: 100%;
-        position: relative;
-    }
-    .swiper__content {
-        position: absolute;
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    .swiper__content .swiper__content-top h1 {
-        font-size: 20px;
-    }
+    
 }
