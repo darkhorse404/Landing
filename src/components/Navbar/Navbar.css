@@ -12,6 +12,7 @@
 }
 .app__navbar-logo h1 {
     font-family: var(--font-base2);
+    font-weight: var(--font-weight-bold);
     color: var(--color-purple);
     font-size: 24px;
 }

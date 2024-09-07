@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
 .section__padding {
   padding: 2rem 4rem;
 }
@@ -15,6 +17,7 @@
 }
 .h1__font2 {
   font-family: var(--font-base2);
+  font-weight: var(--font-weight-bold);
 }
 .h2__font1 {
   font-family: var(--font-base);
@@ -76,6 +79,11 @@
   color: #fff;
   background: var(--color-purple);
   border: none;
+}
+.Bharat{
+  font-family: "Della Respira", serif;
+  font-weight: 700;
+  color: #ff6601;
 }
 
 @media screen and (max-width: 450px) {
