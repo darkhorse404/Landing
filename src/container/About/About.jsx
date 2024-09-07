@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineCreditCard, AiOutlineBarChart  } from 'react-icons/ai';
+import { AiOutlineCreditCard, AiOutlineBarChart, AiOutlineCrown, AiOutlineTeam  } from 'react-icons/ai';
 import images from '../../constants/images';
 import './About.css';
 
@@ -15,14 +15,14 @@ const About = () => {
         <AiOutlineCreditCard className='icon'/>
         <div>
           <h2>FAST AND SECURE</h2>
-          <p className='p__font1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet.</p>
+          <p className='p__font1'>Our USDT transactions are fastest. Our ERC721 Blockchain Integration ensures Transparency and Security</p>
         </div>
       </div>
       <div className="app__about-content-3">
         <AiOutlineBarChart className='icon' />
           <div>
-            <h2>QUALITY ASSURANCE WITH NFTs</h2>
-            <p className='p__font1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet.</p>
+            <h2>NFT QUALITY ASSURANCE</h2>
+            <p className='p__font1'>Whenever You Buy a Product the Respective Product NFT gets delivered to you showing Authenticity & Ensuring Quality from Real Seller</p>
           </div>
       </div>
     </div>
@@ -32,17 +32,17 @@ const About = () => {
         <h1 className='text-center align-middle mx-3.5 m-3 text-red-700'>India Post</h1>
       </div>
       <div className="app__about-content-2">
-        <AiOutlineCreditCard className='icon'/>
+        <AiOutlineCrown className='icon'/>
         <div>
-          <h2>CUSTOMIZED RECCOMENDATIONS</h2>
-          <p className='p__font1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet.</p>
+          <h2>CUSTOMIZED PRODUCTS</h2>
+          <p className='p__font1'>We Provide You what's the Best. Based on your HOME STATE, FESTIVALS, SEASONS etc. We take care that YOU get, what YOU WANT</p>
         </div>
       </div>
       <div className="app__about-content-3">
-        <AiOutlineBarChart className='icon' />
+        <AiOutlineTeam className='icon' />
           <div>
-            <h2>PROMOTION INDIAN ARTISTS & HERITAGE</h2>
-            <p className='p__font1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra tellus imperdiet.</p>
+            <h2>INDIAN ARTISTS & HERITAGE</h2>
+            <p className='p__font1'>Our Platform Connects Small Scale Business & Artists to the World Market & we aim to preserve the Indian Culture & Rich Heritage</p>
           </div>
       </div>
     </div>

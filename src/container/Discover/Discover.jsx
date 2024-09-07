@@ -18,7 +18,6 @@ const DiscoverCard = ({ discover: { imgUrl,profil_1,profil_2,profil_3,profil_4,t
       </div>
     </div>
     <div className='app__discover_card_times'>
-      <a href="#">Buy Now</a>
     </div>
   </div>
 )
@@ -27,15 +26,15 @@ const Discover = () => {
   return (
     <div className='app__discover section__padding'>
       <div className="app__discover-head">
-        <h1 className='h1__font2'>DISCOVER MORE PRODUCTS</h1>
+        <h1 className='h1__font2'>DISCOVER OUR PRODUCTS</h1>
         <ul>
           <li className='color__purple'><a href="#">All Categories</a></li>
           <li><a href="#">Art</a></li>
-          <li><a href="#">Celebrities</a></li>
-          <li><a href="#">Gaming</a></li>
-          <li><a href="#">Sport</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Crypto</a></li>
+          <li><a href="#">Home Decor</a></li>
+          <li><a href="#">Clothings</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Festive Items</a></li>
         </ul>
       </div>
       <div className="app__discover-content">
