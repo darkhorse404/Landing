@@ -11,7 +11,7 @@ import "swiper/css/autoplay";
 
 const Home = () => {
   return (
-    <div className="mt-12 app__home section__padding">
+    <div className="mt-12 app__home section__padding" id="home">
       <div className="app__home-content">
         <h1>DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
         <p className="p__font1">A community of Indian Diaspora for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
@@ -46,7 +46,7 @@ const Home = () => {
         >
           {[1, 2, 3, 4, 5, 6, 7].map((num) => (
             <SwiperSlide key={num}>
-              <img src={images[`gradient_${num}`]} alt={`Gradient ${num}`} />
+              <img src={images[`gradient_${num}`]} alt={`Gradient ${num}`} className="object-cover" />
               <div className="swiper__content">
                 <div className="swiper__content-top">
                   <div className="swiper__content_profil">

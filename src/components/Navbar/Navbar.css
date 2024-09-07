@@ -10,15 +10,22 @@
     color: white;
     z-index: 9999;
 }
+.app__navbar-logo{
+    height: 60px;
+    width: 180px;
+    margin-bottom: -8px;
+}
 .app__navbar-logo h1 {
     font-family: var(--font-base2);
     font-weight: var(--font-weight-bold);
     color: var(--color-purple);
     font-size: 24px;
+    padding: 0;
 }
 .app__navbar-links {
     display: flex;
     align-items: center;
+    margin-bottom: -10px;
 }
 .app__navbar-links ul {
     list-style: none;
@@ -84,6 +91,6 @@
 }
 @media screen and (max-width: 450px) {
     .app__navbar {
-        margin: 10px 2rem;
+        padding: 10px 2rem;
     }
 }

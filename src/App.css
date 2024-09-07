@@ -29,9 +29,9 @@
   font-family: var(--font-base);
   color: #fff;
   background: var(--color-purple);
-  padding: 15px 40px;
+  padding: 15px 30px;
   font-size: 14px;
-  border: none;
+  border: 2px solid var(--color-purple);
   outline: none;
   cursor: pointer;
   border-radius: 30px;
@@ -40,15 +40,13 @@
 }
 .button_1:hover {
   background: none;
-  border:  2px solid var(--color-purple);
-  padding: 13px 40px;
   color: var(--color-purple);
 }
 .button_2 {
   font-family: var(--font-base);
   color: var(--color-purple);
   background: none;
-  padding: 13px 30px;
+  padding: 15px 30px;
   font-size: 14px;
   border: 2px solid var(--color-purple);
   outline: none;
@@ -60,8 +58,6 @@
 .button_2:hover {
   color: #fff;
   background: var(--color-purple);
-  border: none;
-  padding: 15px 30px;
 }
 
 .button_3 {
@@ -78,7 +74,6 @@
 .button_3:hover {
   color: #fff;
   background: var(--color-purple);
-  border: none;
 }
 .Bharat{
   font-family: "Della Respira", serif;
