@@ -26,7 +26,7 @@ const Top = () => {
     <div className="app__top section__padding">
       <div className="app__top-left">
         <div className="app__top-left_main">
-          <img className='left__main-img' src={images.gradient_1} alt="Gradient 1" />
+          <img className='left__main-img' src={images.box_1} alt="Gradient 1" />
           <div className="main__information">
             <div className='profil'>
               <img src={images.profile_6} alt="Profil" />
