@@ -4,7 +4,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 4rem;
+    padding: 16px 4rem;
+    background: #00000044;
+    backdrop-filter: blur(5px);
+    color: white;
+    z-index: 9999;
 }
 .app__navbar-logo h1 {
     font-family: var(--font-base2);

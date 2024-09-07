@@ -15,7 +15,7 @@ import { EffectCards } from "swiper";
 
 const Home = () => {
   return (
-    <><div className="app__home section__padding">
+    <><div className="app__home section__padding mt-12">
       <div className="app__home-content">
         <h1 >DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
         <p className="p__font1">A community of Indian Diasopra for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
