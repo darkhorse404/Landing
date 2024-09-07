@@ -88,7 +88,16 @@
   font-weight: 700;
   color: #ff6601;
 }
-
+.genarate{
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+.genarate:hover{
+  color: var(--color-purple);
+    background: none;
+    border: 1px solid #ff6601;
+}
 @media screen and (max-width: 450px) {
   .section__padding {
     padding: 4rem 2rem;

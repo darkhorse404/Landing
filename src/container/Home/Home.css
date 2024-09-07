@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    z-index: 1;
 }
 .swiper-slide {
     display: flex;
@@ -183,7 +184,7 @@
         width: 100%;
         .mySwiper{
             aspect-ratio: 1;
-            max-width: 80vw;
+            max-width: 90vw;
         }
         .swiper-slide {
             display: flex;
