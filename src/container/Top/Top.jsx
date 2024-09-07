@@ -72,7 +72,7 @@ const Top = () => {
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
-                <button className='button__2'>Place a bid</button>
+                <button className='button__1'>Place a bid</button>
             </div>
           </div>
           <div className="app__top-left_children">
@@ -87,7 +87,7 @@ const Top = () => {
                     </div>
                   <p className='p__font1'>1 of 8</p>
                 </div>
-                <button className='button__2'>Place a bid</button>
+                <button className='button__1'>Place a bid</button>
             </div>
           </div>
         </div>

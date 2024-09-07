@@ -27,7 +27,7 @@ const Discover = () => {
   return (
     <div className='app__discover section__padding'>
       <div className="app__discover-head">
-        <h1 className='h1__font2'>DISCOVER MORE NFTs</h1>
+        <h1 className='h1__font2'>DISCOVER MORE PRODUCTS</h1>
         <ul>
           <li className='color__purple'><a href="#">All Categories</a></li>
           <li><a href="#">Art</a></li>

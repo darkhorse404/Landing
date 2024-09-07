@@ -12,7 +12,7 @@ const App = () => (
         <div class="flex flex-col h-max text-white text-xl">
           <h1 className='text-center text-7xl Bharat'>Bharat<span class="text-green-700">Se</span></h1>
           <p className='my-5 text-3xl'>Your Gateway to the Heart of India's Cultural Roots and Ethnic Heritage</p>
-          <button className='px-5 py-3 button_3'>Get Started</button>
+          <a href='#home' className='h-max w-max block mx-auto'><button className='px-5 py-3 button_3'>Get Started</button></a>
         </div>
       </div>
     </div>

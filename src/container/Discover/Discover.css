@@ -54,7 +54,7 @@
 }
 .app__discover_card_head .nft__images {
     width: 100%;
-    height: 223px;
+    aspect-ratio: 1;
     border-radius: 12px;
 }
 .app__discover_card_head .profil_1 {
