@@ -103,7 +103,7 @@
 }
 .app__footer-input .input_2 {
     padding: 12px 20px;
-    background: #2639ED;
+    background: var(--color-purple);
     border: none;
     outline: none;
     border-radius: 30px;
@@ -114,8 +114,8 @@
     cursor: pointer;
 }
 .app__footer-input .input_2:hover {
-    border: 2px solid #2639ED;
-    color: #2639ED;
+    border: 2px solid var(--color-purple);
+    color: var(--color-purple);
     background: none;
 }
 .app__footer span {

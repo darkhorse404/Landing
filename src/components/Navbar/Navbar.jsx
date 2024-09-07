@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   
   return (
-  <nav className='app__navbar'>
+  <nav className='app__navbar fixed top-0 bg-transparent'> 
     <div className="app__navbar-logo">
       <h1>NFTERS</h1>
     </div>

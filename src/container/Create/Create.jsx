@@ -10,16 +10,14 @@ const Create = () => {
         <div className="app__create-left_main">
           <div className="left__main_1">
             <img className='create__nft' src={images.gradient_1} alt="Gradient 1" />
-            <img className='profil' src={images.profil} alt="Profil Img" />
           </div>
           <div className="left__main_2">
             <img className='create__nft' src={images.gradient_2} alt="Gradient 1" />
-            <img className='profil' src={images.profil} alt="Profil Img" />
+
           </div>
         </div>
         <div className="app__create-left_child">
             <img className='create__nft' src={images.gradient_3} alt="Gradient 1" />
-            <img className='profil' src={images.profil} alt="Profil Img" />
         </div>
       </div>
       <div className="app__create-right">

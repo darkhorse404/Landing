@@ -8,18 +8,17 @@ import "swiper/css/effect-cards";
 
 import images from '../../constants/images';
 import "./Home.css";
+import bgvideo from '../../asset/bgvid.mp4'
 
 // import required modules
 import { EffectCards } from "swiper";
 
-
-
 const Home = () => {
   return (
-    <div className="app__home section__padding">
+    <><div className="app__home section__padding">
       <div className="app__home-content">
-        <h1 >DISCOVER, AND COLLECT DIGITAL ART NFTS</h1>
-        <p className="p__font1">Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, Sell, and discover exclusive digital assets.</p>
+        <h1 >DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
+        <p className="p__font1">A community of Indian Diasopra for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
         <button className="button_1">Explore Now</button>
         <div className="app__home-content_amount">
           <div>
@@ -263,7 +262,7 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </div></>
   );
 };
 export default Home;

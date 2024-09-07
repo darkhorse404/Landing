@@ -7,10 +7,6 @@ const DiscoverCard = ({ discover: { imgUrl,profil_1,profil_2,profil_3,profil_4,t
   <div className='app__discover_card'>
     <div className="app__discover_card_head">
       <img className='nft__images' src={imgUrl} alt="NFT Images" />
-        <img className='profil_1' src={profil_1} alt="Profil 1" />
-        <img className='profil_2' src={profil_2} alt="Profil 1" />
-        <img className='profil_3' src={profil_3} alt="Profil 1" />
-        <img className='profil_4' src={profil_4} alt="Profil 1" />
     </div>
     <div className="app__discover_card_description">
       <h1 className='h2__font1'>{title}</h1>
@@ -19,12 +15,10 @@ const DiscoverCard = ({ discover: { imgUrl,profil_1,profil_2,profil_3,profil_4,t
           <img src={icon} alt="Etherum Icon" />
           <p className='p__font1'>{bid}</p>
         </div>
-        <p className='p__font1 amount'>{amount}</p>
       </div>
     </div>
     <div className='app__discover_card_times'>
-      <p className='p__font1'>{time}</p>
-      <a href="#">Place a bid</a>
+      <a href="#">Buy Now</a>
     </div>
   </div>
 )
