@@ -1,24 +1,20 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, Autoplay } from "swiper";
+import images from '../../constants/images';
+import "./Home.css";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
-import images from '../../constants/images';
-import "./Home.css";
-import bgvideo from '../../asset/bgvid.mp4'
-
-// import required modules
-import { EffectCards } from "swiper";
+import "swiper/css/autoplay";
 
 const Home = () => {
   return (
-    <><div className="mt-12 app__home section__padding">
+    <div className="mt-12 app__home section__padding">
       <div className="app__home-content">
-        <h1 >DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
-        <p className="p__font1">A community of Indian Diasopra for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
+        <h1>DELIVERING INDIAN AUTHENTICITY ACROSS THE WORLD</h1>
+        <p className="p__font1">A community of Indian Diaspora for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>
         <button className="button_1">Explore Now</button>
         <div className="app__home-content_amount">
           <div>
@@ -37,190 +33,35 @@ const Home = () => {
       </div>
       <div className="app__home-images">
         <Swiper
+          spaceBetween={20}
           effect={"cards"}
           grabCursor={true}
-          modules={[EffectCards]}
+          modules={[EffectCards, Autoplay]}
           className="mySwiper"
-          loop = {true}
+          loop={true}
+          autoplay={{
+            delay: 800,
+            disableOnInteraction: false,
+          }}
         >
-          <SwiperSlide>
-            <img src={images.gradient_1} alt="Gradient 1" />
-            <div className="swiper__content">
-              <div className="swiper__content-top">
-                {/* <h1>Abstr Gradient NFT</h1> */}
-                <div className="swiper__content_profil">
-                  <img src={images.profil} alt="Arief Profil" />
-                </div>
-              </div>
-              <div className="swiper__content-bottom">
-                <div className="content__1">
-                  <h1>Current Bid</h1>
-                    <div className="current__bid">
-                      <img src={images.eth} alt="Etherum Logo" />
-                      </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_2} alt="Gradient 2" />
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+            <SwiperSlide key={num}>
+              <img src={images[`gradient_${num}`]} alt={`Gradient ${num}`} />
               <div className="swiper__content">
                 <div className="swiper__content-top">
-                  {/* <h1>Abstr Gradient NFT</h1> */}
                   <div className="swiper__content_profil">
-                    <img src={images.profil} alt="Arief Profil" />
-                    {/* <p>Arief Wahyudi</p> */}
                   </div>
                 </div>
-                <div className="swiper__content-bottom">
-                  <div className="content__1">
-                    <h1>Current Bid</h1>
-                      <div className="current__bid">
-                        <img src={images.eth} alt="Etherum Logo" />
-                        {/* <p>0.25 USDT</p> */}
-                      </div>
-                  </div>
                   <div className="content__2">
-                    <div className="ends__in">
-                          
-                        </div>
-                  </div>
+                    <div className="ends__in"></div>
                 </div>
               </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_3} alt="Gradient 3" />
-                <div className="swiper__content">
-                  <div className="swiper__content-top">
-                    {/* <h1>Abstr Gradient NFT</h1> */}
-                    <div className="swiper__content_profil">
-                      <img src={images.profil} alt="Arief Profil" />
-                      {/* <p>Arief Wahyudi</p> */}
-                    </div>
-                  </div>
-                  <div className="swiper__content-bottom">
-                    <div className="content__1">
-                      <h1>Current Bid</h1>
-                        <div className="current__bid">
-                          <img src={images.eth} alt="Etherum Logo" />
-                          {/* <p>0.25 USDT</p> */}
-                        </div>
-                    </div>
-                    <div className="content__2">
-                      <div className="ends__in">
-                            
-                          </div>
-                    </div>
-                  </div>
-                </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_4} alt="Gradient 4" />
-                  <div className="swiper__content">
-                    <div className="swiper__content-top">
-                      {/* <h1>Abstr Gradient NFT</h1> */}
-                      <div className="swiper__content_profil">
-                        <img src={images.profil} alt="Arief Profil" />
-                        {/* <p>Arief Wahyudi</p> */}
-                      </div>
-                    </div>
-                    <div className="swiper__content-bottom">
-                      <div className="content__1">
-                        <h1>Current Bid</h1>
-                          <div className="current__bid">
-                            <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 USDT</p> */}
-                          </div>
-                      </div>
-                      <div className="content__2">
-                        <div className="ends__in">
-                              
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_5} alt="Gradient 5" />
-                  <div className="swiper__content">
-                    <div className="swiper__content-top">
-                      {/* <h1>Abstr Gradient NFT</h1> */}
-                      <div className="swiper__content_profil">
-                        <img src={images.profil} alt="Arief Profil" />
-                        {/* <p>Arief Wahyudi</p> */}
-                      </div>
-                    </div>
-                    <div className="swiper__content-bottom">
-                      <div className="content__1">
-                        <h1>Current Bid</h1>
-                          <div className="current__bid">
-                            <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 USDT</p> */}
-                          </div>
-                      </div>
-                      <div className="content__2">
-                        <div className="ends__in">
-                              
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_6} alt="Gradient 6" />
-                  <div className="swiper__content">
-                    <div className="swiper__content-top">
-                      {/* <h1>Abstr Gradient NFT</h1> */}
-                      <div className="swiper__content_profil">
-                        <img src={images.profil} alt="Arief Profil" />
-                        {/* <p>Arief Wahyudi</p> */}
-                      </div>
-                    </div>
-                    <div className="swiper__content-bottom">
-                      <div className="content__1">
-                        <h1>Current Bid</h1>
-                          <div className="current__bid">
-                            <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 USDT</p> */}
-                          </div>
-                      </div>
-                      <div className="content__2">
-                        <div className="ends__in">
-                              
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.gradient_7} alt="Gradient 7" />
-                  <div className="swiper__content">
-                    <div className="swiper__content-top">
-                      {/* <h1>Abstr Gradient NFT</h1> */}
-                      <div className="swiper__content_profil">
-                        <img src={images.profil} alt="Arief Profil" />
-                        {/* <p>Arief Wahyudi</p> */}
-                      </div>
-                    </div>
-                    <div className="swiper__content-bottom">
-                      <div className="content__1">
-                        <h1>Current Bid</h1>
-                          <div className="current__bid">
-                            <img src={images.eth} alt="Etherum Logo" />
-                            {/* <p>0.25 USDT</p> */}
-                          </div>
-                      </div>
-                      <div className="content__2">
-                        <div className="ends__in">
-                              
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
-    </div></>
+    </div>
   );
 };
+
 export default Home;
