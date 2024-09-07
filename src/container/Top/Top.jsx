@@ -29,7 +29,7 @@ const Top = () => {
           <img className='left__main-img' src={images.gradient_1} alt="Gradient 1" />
           <div className="main__information">
             <div className='profil'>
-              <img src={images.profil} alt="Profil" />
+              <img src={images.profile_6} alt="Profil" />
                 <div>
                   <h2 className='h2__font1'>The Futr Abstr</h2>
                   <p className='p__font1'>10 in the stock</p>
@@ -50,7 +50,7 @@ const Top = () => {
             <div className="children__information">
               <h2 className='h2__font1'>The Futr Abstr</h2>
                 <div className='bil'>
-                  <img src={images.profil} alt="Profil" />
+                  <img src={images.profile_7} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
                       <span>0.25ETH</span>
@@ -65,7 +65,7 @@ const Top = () => {
             <div className="children__information">
               <h2 className='h2__font1'>The Futr Abstr</h2>
                 <div className='bil'>
-                  <img src={images.profil} alt="Profil" />
+                  <img src={images.profile_8} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
                       <span>0.25ETH</span>
@@ -80,7 +80,7 @@ const Top = () => {
             <div className="children__information">
               <h2 className='h2__font1'>The Futr Abstr</h2>
                 <div className='bil'>
-                  <img src={images.profil} alt="Profil" />
+                  <img src={images.profile_4} alt="Profil" />
                     <div>
                       <img src={images.eth3} alt="Etherum Icon" />
                       <span>0.25ETH</span>
