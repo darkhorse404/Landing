@@ -27,8 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="app__navbar-button">
-        <button className='button_1'>Upload</button>
-        <button className='button_2'>Connect Wallet</button>
+        <button className='button_1'>Connect Wallet</button>
       </div>
       <div className="app__navbar-smallscreen">
         <GiHamburgerMenu color='#3D00B7' fontSize={27} onClick={() => setToggleMenu(true)} />

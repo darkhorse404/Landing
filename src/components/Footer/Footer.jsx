@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../asset/BharatSe_logo2.png'
 
-import {AiFillFacebook,AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+import {AiFillFacebook,AiFillTwitterCircle,AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import './Footer.css';
 
 const Footer = () => {
@@ -13,6 +13,7 @@ const Footer = () => {
         <p className='p__font1 mb-5'>Your Not-A-Regular E-Commerce Site. An Unique Solution to Transform the world of Logistics. Pushing culture and India Post to new heights. Connecting bridges between Diaspora and Local Artisans in a Decentralised, Secure and Seamless way.</p>
         <ul>
           <li><a href="#"><AiFillFacebook className='facebook'/></a></li>
+          <li><a href="#"><AiFillInstagram className='insta'/></a></li>
           <li><a href="#"><AiFillTwitterCircle className='twitter'/></a></li>
           <li><a href="#"><AiFillLinkedin className='linkedin'/></a></li>
         </ul>
