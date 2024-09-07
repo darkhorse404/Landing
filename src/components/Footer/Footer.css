@@ -35,6 +35,11 @@
 .app__footer-content-1 ul li {
     margin-right: 10px;
 }
+.insta {
+    color: #ff28a2;
+    font-size: 40px;
+    transition: all ease 0.5s;
+}
 .facebook {
     color: #3B5998;
     font-size: 40px;

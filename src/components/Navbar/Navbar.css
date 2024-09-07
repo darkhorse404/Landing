@@ -11,8 +11,8 @@
     z-index: 9999;
 }
 .app__navbar-logo{
-    height: 80px;
-    width: 200px;
+    height: 60px;
+    width: 180px;
     margin-bottom: -8px;
 }
 .app__navbar-logo h1 {
