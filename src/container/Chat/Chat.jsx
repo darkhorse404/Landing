@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../App.css";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import { FaComments, FaTimes } from "react-icons/fa";
+
+const gemi = process.env.REACT_APP_GEM_API;
 
 function Chat() {
   const [question, setQuestion] = useState("");
@@ -13,6 +15,10 @@ function Chat() {
   // Sample product data
   const products = [
   ];
+
+  useEffect(() => {
+    console.log("API Key:", gemi);
+  }, []);
 
   // Function to handle form submission
   async function generateAnswer(e) {
@@ -35,10 +41,10 @@ function Chat() {
     setAnswer("Loading your Personalized Answer...");
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBqi9tPth3tQlaWJyRzU-SVEDr3-qY9bds`, // Replace with actual key
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBqi9tPth3tQlaWJyRzU-SVEDr3-qY9bds`,
         method: "post",
         data: {
-          contents: [{ parts: [{ text: question }] }],
+          contents: [{ parts: [{ text: "You are Bharti, an AI Assistant for our ecommerce marketplace named BharatSe. We are a platform that sells various Indian ethnic and heritage products across the world. We specialize in Clothings, food etc. You must answer signifying and promoting the various traditional items of India. Answer politely and Use Emojis but answer short and crisp manner." + question }] }],
         },
       });
 
