@@ -78,7 +78,11 @@
     font-weight: 600;
     border-radius: 15px;
 }
-
+.app__collection-3dmodel {
+    margin-top: 20px;
+    height: 300px;
+  }
+  
 @media screen and (max-width: 1150px) {
     .app__collection-items_content {
         flex-direction: column;

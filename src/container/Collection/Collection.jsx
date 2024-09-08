@@ -3,10 +3,10 @@ import { data, images } from '../../constants';
 
 import './Collection.css';
 
-const CollectionFeatured =({featured: {imgUrl, imgUrl2, imgUrl3, imgUrl4, title, profil, names, item}}) => (
+const CollectionFeatured = ({ featured: { imgUrl, imgUrl2, imgUrl3, imgUrl4, title, profil, names, item } }) => (
   <div className='app__collection-card'>
     <div className="app__collection-card_top">
-      <img src={imgUrl} alt="Main Image Collection"  />
+      <img src={imgUrl} alt="Main Image Collection" />
       <div className='app__collection-card_children'>
         <img src={imgUrl2} alt="Image Collection 2" />
         <img src={imgUrl3} alt="Image Collection 3" />

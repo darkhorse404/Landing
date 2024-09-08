@@ -26,17 +26,6 @@ function Chat() {
     setGeneratingAnswer(true);
     
     // Check if the question includes "BharatSe"
-    if (question.toLowerCase().includes("bharatse")) {
-      setAnswer(
-        `Thank you for your interest in BharatSe! We're excited to connect you with authentic traditional products. 
-        Here are some popular items you might love:\n
-        ${products.map(product => `${product.name} - ${product.price}`).join('\n')}
-        \nFeel free to ask more about any product or our services!`
-      );
-      setQuestion(""); // Clear the question after generating the answer
-      setGeneratingAnswer(false);
-      return; // Exit the function early
-    }
 
     setAnswer("Loading your Personalized Answer...");
     try {
