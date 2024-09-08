@@ -11,7 +11,7 @@ import "swiper/css/autoplay";
 
 const Home = () => {
   return (
-    <div className="mt-12 app__home section__padding" id="home">
+    <div className="app__home section__padding" id="home">
       <div className="app__home-content">
         <h1>DELIVERING INDIAN AUTHENTICITY WITH BLOCKCHAIN TRANSPARENCY</h1>
         <p className="p__font1">A community of Indian Diaspora for meeting their needs of Traditional/Ethnic/Handicrafts through India Post</p>

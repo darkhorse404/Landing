@@ -2,6 +2,7 @@
 
 .section__padding {
   padding: 2rem 4rem;
+  margin: 40px 0;
 }
 .flex__center {
   display: flex;
@@ -37,12 +38,12 @@
   font-family: var(--font-base);
   color: #fff;
   background: var(--color-purple);
-  padding: 15px 30px;
-  font-size: 14px;
+  padding: 10px 15px;
+  font-size: 16px;
   border: 2px solid var(--color-purple);
   outline: none;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
   margin: 0 10px;
   transition: all ease 0.5s;
 }
@@ -55,7 +56,7 @@
   color: var(--color-purple);
   background: none;
   padding: 15px 30px;
-  font-size: 14px;
+  font-size: 20px;
   border: 2px solid var(--color-purple);
   outline: none;
   margin: 0 10px;
@@ -93,10 +94,39 @@
     padding: 12px 25px;
     border-radius: 30px;
 }
-.genarate:hover{
+/* .genarate:hover{
   color: var(--color-purple);
     background: none;
     border: 1px solid #ff6601;
+} */
+.bg-chatbot{
+  background: #00000044;
+backdrop-filter: blur(10px);
+}
+.z-9999{
+  z-index: 9999;
+}
+.shadow-5xl{
+  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.329);
+}
+.rounded-5xl{
+  border-radius: 2rem;
+}
+.bg-bharatiai{
+  background: #cdcdcd3b;
+backdrop-filter: blur(5px);
+}
+.bg-bharatiai-hover{
+  box-shadow: 0 0 15px 0 #0bcd11;
+}
+.w-control{
+  width: 160px;
+}
+.h-control{
+  height: 56px;
+}
+.bg-gray-chatbox{
+  background-color: #56565661;
 }
 @media screen and (max-width: 450px) {
   .section__padding {

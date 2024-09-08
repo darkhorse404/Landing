@@ -114,7 +114,7 @@
 .app__footer-input .input_2 {
     padding: 12px 20px;
     background: var(--color-purple);
-    border: none;
+    border: 2px solid var(--color-purple);
     outline: none;
     border-radius: 30px;
     color: #fff;
