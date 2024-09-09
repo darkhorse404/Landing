@@ -128,6 +128,32 @@ backdrop-filter: blur(5px);
 .bg-gray-chatbox{
   background-color: #56565661;
 }
+
+
+@media screen and (max-width: 1150px) and (min-width: 450px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .branding{
+    font-size: 1.2rem;
+    padding: 0 40px;
+    max-width: 100%;
+    h1{
+      font-size: 3.5rem;
+    }
+    p{
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 0 4rem;
+    }
+  }
+  .chatbox-responsive{
+    max-height: 60vh;
+    padding-bottom: 1rem;
+  }
+}
+
+
 @media screen and (max-width: 450px) {
   .section__padding {
     padding: 4rem 2rem;

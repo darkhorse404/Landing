@@ -48,6 +48,16 @@
 .app__navbar-links ul li:hover {
     color: var(--color-purple);
 }
+.app__navbar-button .login {
+    margin: 0 1rem;
+    font-size: 16px;
+    font-family: var(--font-base);
+    font-weight: 500;
+    transition: all ease 0.5s;
+}
+.app__navbar-button .login:hover {
+    color: var(--color-purple);
+}
 .app__navbar-search .search {
     display: flex;
     align-items: center;
@@ -88,20 +98,38 @@
 }
 
 .app__navbar-smallscreen_overlay{
-    background: #00000044;
-    backdrop-filter: blur(5px);
+    background: #00000035;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    z-index: 9999;
-    top: 90px;
+    z-index: 10000;
+    top: 110px;
     font-size: 1.3rem;
-    padding:20px 28px 40px 40px;
+    padding:30px;
     height: max-content;
-    min-height: 200px;
+    min-width: 300px;
     li{
         width: 150px;
     }
 }
 
+div[disabled]{
+    pointer-events: none;
+}
+
+div .profile-btn{
+padding: 4px;
+}
+
+.bg-btn-hover:hover{
+    background: #6c6c6c32;
+}
+
+.toggleInactive{
+    min-height: 0;
+    min-width: 0;
+    width: 0;
+height: 0;
+}
 @media screen and (max-width: 1150px) {
     .app__navbar-links {
         display: none;
@@ -114,6 +142,14 @@
     }
     .app__navbar-smallscreen {
         display: flex;
+        .app__navbar-button{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            button{
+                margin: 0.6rem;
+            }
+        }
     }
     .app__navbar-logo{
             height: 80px;

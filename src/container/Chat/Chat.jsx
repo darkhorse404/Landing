@@ -83,9 +83,9 @@ function Chat() {
 
       {/* Larger Animated Chatbox */}
       <div
-        className={`fixed z-9999 bottom-28 right-6 shadow-5xl w-96 h-[30rem] rounded-lg shadow-lg p-6 flex flex-col transition-all duration-500 ease-in-out transform ${
-          isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-        } bg-chatbot`}
+        className={`fixed z-9998 bottom-28 right-6 shadow-5xl w-96 h-[30rem] rounded-lg shadow-lg p-6 flex flex-col transition-all duration-500 ease-in-out transform ${
+          isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 "
+        } bg-chatbot chatbox-responsive`}
         style={{ transformOrigin: "bottom right" }} // Animation origin for smooth open/close
       >
         {/* Heading with Animation */}
