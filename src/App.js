@@ -1,4 +1,4 @@
-import {React, Suspense} from 'react';
+import {React, Suspense,useState} from 'react';
 import { About, Collection, Create, Discover, Home, Top } from './container';
 import { Navbar, Footer } from './components';
 import Chat from './container/Chat/Chat.jsx';
@@ -7,9 +7,21 @@ import bgvideo from './asset/bgvid.mp4'
 // import { Canvas } from '@react-three/fiber'
 // import IndiaGate from './container/Scene/IndiaGate.jsx';
 
-const App = () => (
-  <div className=''>
-    <Navbar />
+import Loader from './components/Loader/Loader.jsx';
+
+function App() {
+  const [isLoading, setIsLoading] = useState(true);
+ 
+    setTimeout(() => {
+        setIsLoading(false);
+    }, 2000);
+  return(
+    // <>
+    // {isLoading? <Loader/> :  }
+   
+    // </>
+    <div className=''>
+  
     <div clasName="h-screen w-screen p-0 mx-0 overflow-hidden flex justify-center items-center"><video className="object-cover w-screen h-screen px-0 mx-0 overflow-x-hidden" autoplay="true" loop="true" muted><source src={bgvideo} type="video/mp4" /></video>
       <div className='absolute top-0 flex items-center justify-center w-full h-screen -z-2'>
         <div class="flex flex-col h-max text-white text-xl px-8 branding">
@@ -26,8 +38,9 @@ const App = () => (
     <Create />
     <Discover />
     <Chat />
-    <Footer />
+    
   </div>
-)
+  
+)}
 
 export default App;

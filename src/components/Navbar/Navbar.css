@@ -8,7 +8,7 @@
     background: #00000044;
     backdrop-filter: blur(10px);
     color: white;
-    z-index: 9999;
+    z-index: 10000;
 }
 .app__navbar-logo{
     height: 60px;
@@ -37,6 +37,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+    
+}
+.linkcolor{
+    color: var(--color-purple);
 }
 .app__navbar-links ul li {
     margin: 0 2rem;
@@ -95,6 +100,14 @@
     padding: 1rem; */
     color: white;
     z-index: 9999;
+    ul{
+        .linkanchors{
+            color: white;
+        }
+        .linkcolor{
+            color: var(--color-purple);
+        }
+    }
 }
 
 .app__navbar-smallscreen_overlay{

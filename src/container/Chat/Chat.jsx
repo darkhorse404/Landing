@@ -63,7 +63,7 @@ function Chat() {
   return (
     <div className=''>
       {/* Floating Button with Icons */}
-      <div className={`${isHover?'bg-bharatiai-hover':''} fixed z-9998 bottom-8 right-8 h-max w-max border-2 border-green-500 flex flex-row rounded-5xl justify-end items-center shadow-lg bg-bharatiai  transition-all  duration-350`}>
+      <div className={`${isHover?'bg-bharatiai-hover':''} fixed z-9999 bottom-8 right-8 h-max w-max border-2 border-green-500 flex flex-row rounded-5xl justify-end items-center shadow-lg bg-bharatiai  transition-all  duration-350`}>
         <div className={`text-2xl text-orange-600 flex justify-center items-center w-control h-control  transition-all delay-150 duration-350 overflow-x-hidden`}>Bharati<span className="text-green-600">.AI</span></div>
         <div
           className="w-max p-4 text-white transition-all duration-300 transform bg-orange-500 rounded-full cursor-pointer z-9999 scale-110 hover:bg-orange-600 hover:scale-125"
@@ -83,7 +83,7 @@ function Chat() {
 
       {/* Larger Animated Chatbox */}
       <div
-        className={`fixed z-9998 bottom-28 right-6 shadow-5xl w-96 h-[30rem] rounded-lg shadow-lg p-6 flex flex-col transition-all duration-500 ease-in-out transform ${
+        className={`fixed z-9999 bottom-28 right-6 shadow-5xl w-96 h-[30rem] rounded-lg shadow-lg p-6 flex flex-col transition-all duration-500 ease-in-out transform ${
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 "
         } bg-chatbot chatbox-responsive`}
         style={{ transformOrigin: "bottom right" }} // Animation origin for smooth open/close
