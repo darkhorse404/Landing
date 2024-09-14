@@ -5,80 +5,62 @@ import { AiOutlineSearch } from "react-icons/ai";
 import logo from "../../asset/BharatSe_logo2.png";
 import smalllogo from "../../asset/logo1.png";
 import "./Navbar.css";
-
 import { useAuth0 } from "@auth0/auth0-react";
-import { log } from "three/webgpu";
 
 const Navbar = () => {
-
-  const navlinkUrls=[
-    {displaytext:'Marketplace',
-      link:''
+  const navlinkUrls = [
+    {
+      displaytext: "Home",
+      link: "./",
     },
-    {displaytext:'Community',
-      link:'./community'
-          },
-    {displaytext:'Logistics',
-            link:'https://inventory-bharatse.vercel.app'
-     }
-  ]
-
+    {
+      displaytext: "Marketplace",
+      link: "https://coming-soon-devxaves.vercel.app",
+    },
+    {
+      displaytext: "Community",
+      link: "https://bharatse-community.vercel.app", // Internal link
+    },
+    {
+      displaytext: "Logistics",
+      link: "https://inventory-bharatse.vercel.app",
+    },
+  ];
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading } = useAuth0();
-
-  
-
-  function toggleColor () {
-    console.log(document.getElementsByClassName("linkanchors"));
-    
-    var linkanchors = Array.from(
-      document.getElementsByClassName("linkanchors")
-    );
-    var url = window.location.pathname;
-    console.log(url);
-
-    if (url == "/community") {
-      console.log("fuckya");
-console.log(linkanchors);
-
-      linkanchors.map((i) => {
-        i.classList.add("linkcolor");
-      });
-    } else {
-      console.log("fuckno");
-      linkanchors.map((i) => {
-        i.classList.remove("linkcolor");
-      });
-    }
-  };
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
   return (
     <>
       <nav className="app__navbar w-screen fixed top-0 shadow-2xl">
         <div className="app__navbar-logo">
-          <img className="h-full w-full object-cover" src={logo}></img>
+          <img className="h-full w-full object-cover" src={logo} alt="Logo" />
         </div>
         <div className="app__navbar-logo_small">
-          <img className="h-full w-full object-cover" src={smalllogo}></img>
+          <img
+            className="h-full w-full object-cover"
+            src={smalllogo}
+            alt="Small Logo"
+          />
         </div>
         {isAuthenticated && (
           <div className="app__navbar-links">
             <ul>
-              {navlinkUrls.map((i)=>(
-                <li>
-                <a href={i.link}>{i.displaytext}</a>
-              </li>
+              {navlinkUrls.map((i, index) => (
+                <li key={index}>
+                  <a
+                    href={i.link}
+                    target={i.link.startsWith("http") ? "_blank" : "_self"}
+                    rel={i.link.startsWith("http") ? "noopener noreferrer" : ""}
+                  >
+                    {i.displaytext}
+                  </a>
+                </li>
               ))}
-              
             </ul>
           </div>
-          
-        )
-        }
+        )}
 
         {isAuthenticated && (
           <div className="app__navbar-search bg-transparent">
@@ -104,21 +86,17 @@ console.log(linkanchors);
               Log Out
             </button>
             <div className="button_2 flex flex-row items-center justify-evenly w-max profile-btn">
-              <h2 className="mx-3">{user.name}</h2>
+              <h2 className="mx-3">{user.name.split(" ")[0]}</h2>
               <img
                 className="w-12 rounded-full aspect-square"
                 src={user.picture}
+                alt="Profile"
               />
             </div>
           </div>
         ) : (
           <div className="app__navbar-button">
-            <button
-              className="login"
-              onClick={() => {
-                loginWithRedirect();
-              }}
-            >
+            <button className="login" onClick={loginWithRedirect}>
               Log In
             </button>
             <button
@@ -142,21 +120,18 @@ console.log(linkanchors);
               color="#eaeaea"
               className="-mr-1 "
               fontSize={34}
-              onClick={() => {
-                toggleMenu ? setToggleMenu(false) : setToggleMenu(true);
-              }}
+              onClick={() => setToggleMenu(false)}
             />
           ) : (
             <GiHamburgerMenu
               color="#eaeaea"
               fontSize={27}
-              onClick={() => {
-                toggleMenu ? setToggleMenu(false) : setToggleMenu(true);
-              }}
+              onClick={() => setToggleMenu(true)}
             />
           )}
         </div>
       </nav>
+
       <div className={`app__navbar-smallscreen items-center`}>
         <div
           className={`${
@@ -166,20 +141,28 @@ console.log(linkanchors);
           } app__navbar-smallscreen_overlay bg-chatbot slide-bottom flex flex-col items-end fixed right-2 transition-all duration-500 ease-in-out transform origin-top-right shadow-2xl`}
           disabled={toggleMenu ? false : true}
         >
-          {/* <MdClose fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)} /> */}
           {isAuthenticated && (
             <div className="w-full flex flex-col items-center">
               <div className="profile-details flex flex-col items-center py-5 w-full border-b-gray-700 border-b">
                 <img
                   className="w-24 rounded-full aspect-square"
                   src={user.picture}
+                  alt="Profile"
                 />
                 <h2 className="mx-3 mt-2">{user.name}</h2>
               </div>
               <ul className="app__navbar-smallscreen-links items-center py-3 mb-5 border-b-gray-700 border-b">
-                {navlinkUrls.map((i)=>(<li className="my-2 text-center">
-                  <a href={i.link}>{i.displaytext}</a>
-                </li>))}
+                {navlinkUrls.map((i, index) => (
+                  <li key={index} className="my-2 text-center">
+                    <a
+                      href={i.link}
+                      target={i.link.startsWith("http") ? "_blank" : "_self"}
+                      rel={i.link.startsWith("http") ? "noopener noreferrer" : ""}
+                    >
+                      {i.displaytext}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -193,20 +176,10 @@ console.log(linkanchors);
               >
                 Log Out
               </button>
-              {/* <div className='button_2 flex flex-row items-center justify-evenly w-max profile-btn'>
-    
-          <h2 className='mx-3'>{user.name}</h2>
-          <img className='w-12 rounded-full aspect-square' src={user.picture} />
-        </div> */}
             </div>
           ) : (
             <div className="app__navbar-button flex flex-col my-3">
-              <button
-                className="login"
-                onClick={() => {
-                  loginWithRedirect();
-                }}
-              >
+              <button className="login" onClick={loginWithRedirect}>
                 Log In
               </button>
               <button
@@ -228,4 +201,5 @@ console.log(linkanchors);
     </>
   );
 };
+
 export default Navbar;
