@@ -17,7 +17,6 @@ import {
   Outlet,
   BrowserRouter,
 } from "react-router-dom";
-import Community from './container/Community/Community';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -33,7 +32,6 @@ root.render(
     <BrowserRouter>
     <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/community" element={<Community />}/>
                 </Routes>
     </BrowserRouter>
     <Footer/>
